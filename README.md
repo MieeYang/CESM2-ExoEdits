@@ -8,9 +8,13 @@ ExoCAM (https://github.com/storyofthewolf/ExoCAM.git) is a complete and widely t
 Below are the steps:
 1. Create a new case: Here we want to run a slab-ocean model with Earth's continents, so we choose compset ETEST and grid f19_g17.
 <pre>
-  ./create_newcase --compset ETEST --res f19_g17 --mach YOUR_MACHINE --compiler gnu --case CASEROOT --run-unsupported 
-  cd CASEROOT
+  ./create_newcase --compset ETEST --res f19_g17 --mach YOUR_MACHINE --compiler gnu --case CASE --run-unsupported 
+  cd CASE
 </pre>
-2. Copy the folder `SourceMods` and the `user_nl_xxx` into CASEROOT.
+2. Copy the folder `SourceMods` and the `user_nl_xxx` into CASE.
+
+To edit rotation period, exo_ndays should be edited to the new rotation period in the unit of Earth days.
 
 In `user_nl_xxx`, CASEROOT should be the folder where inputfiles are located. The inputfiles can be found from NCAR sources. The inputfile used in the example case can be found from ExoCAM repo (https://github.com/storyofthewolf/ExoCAM.git).
+
+3. setup, build, and run the case.
