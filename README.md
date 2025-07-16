@@ -12,3 +12,5 @@ Below are the steps:
   cd CASEROOT
 </pre>
 2. Copy the folder `SourceMods` and the `user_nl_xxx` into CASEROOT.
+
+In `user_nl_xxx`, CASEROOT should be the folder where inputfiles are located. The inputfiles can be found from NCAR sources. The inputfile used in the example case can be found from ExoCAM repo (https://github.com/storyofthewolf/ExoCAM.git).
