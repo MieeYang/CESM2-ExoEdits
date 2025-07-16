@@ -1,0 +1,24 @@
+! Users should add all user specific namelist changes below in the form of 
+! namelist_var = new_namelist_value 
+
+!print_energy_errors = .true.
+!! state_debug_checks = .true.
+
+avgflag_pertape = 'A'
+nhtfrq = 0
+mfilt = 1
+inithist = 'MONTHLY'
+
+!liqopticsfile                  = 'CRLIQ48bin_rrtmg.nc'
+!! iradlw = 1
+!! iradsw = 1
+
+cldfrc_rhminh = 0.7
+cldfrc_rhminl = 0.7
+clubb_c8      =  5.0
+
+
+! NPCCN causes model to crash, 'NPCCN'
+
+ncdata = 'CASEROOT/inputdata/f.e21.FWaerchem-histSST.f09_g17.CMIP6-histSST-WACCM.001.interp56L.cam.i.2008-01-01-00000.nc'
+
